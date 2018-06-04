@@ -17,4 +17,9 @@ public class Passed implements TestState {
         System.out.println("Welcome to Passed State ");
 
     }
+
+    @Override
+    public String status(String text) {
+        return text + "(-:";
+    }
 }

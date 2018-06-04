@@ -18,6 +18,11 @@ public class questionnaireAvailable implements QuestionnaireState {
     }
 
     @Override
+    public String status(String text) {
+        return null;
+    }
+
+    @Override
     public void answer() {
         Student.Points++;
         Student.QuestionnaireState = new questionnaireNotAvailable();

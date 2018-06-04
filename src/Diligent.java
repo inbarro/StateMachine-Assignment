@@ -24,4 +24,9 @@ public class Diligent implements ArticleState {
 
 
     }
+
+    @Override
+    public String status(String text) {
+        return '*' + text + '*';
+    }
 }

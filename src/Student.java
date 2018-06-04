@@ -14,6 +14,7 @@ public class Student {
         QuestionnaireState = new questionnaireAvailable();
         ArticleState = new Normal();
         PostsState = new NotActive();
+        TestState = new BeforeTest();
     }
     public void exam(int score){
         TestState.exam(score);
@@ -23,8 +24,8 @@ public class Student {
         ArticleState.read();
     }
 
-    public void post(String text){
-        PostsState.post(text);
+    public void post(){
+        PostsState.post();
     }
 
     public void answer(){
@@ -37,6 +38,13 @@ public class Student {
     }
 
     public void status(String text){
+        String status = text;
+        status = ArticleState.status(text);
+        status = PostsState.status(status);
+        status = TestState.status(status);
+
+        System.out.println(status);
+
 
     }
 

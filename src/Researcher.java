@@ -17,7 +17,10 @@ public class Researcher implements ArticleState {
     @Override
     public void printState() {
         System.out.println("Welcome to Researcher state");
+    }
 
-
+    @Override
+    public String status(String text) {
+        return "**" + text + "**";
     }
 }

@@ -4,7 +4,7 @@ public class Active implements PostsState {
         printState();
     }
     @Override
-    public void post(String text) {
+    public void post() {
         Student.posts++;
     }
 
@@ -18,5 +18,10 @@ public class Active implements PostsState {
     public void printState() {
         System.out.println("Welcome to Active State");
 
+    }
+
+    @Override
+    public String status(String text) {
+        return text + "(active)";
     }
 }

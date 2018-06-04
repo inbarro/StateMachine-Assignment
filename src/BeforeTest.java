@@ -26,4 +26,9 @@ public class BeforeTest implements TestState {
         System.out.println("Welcome to BeforeTest State");
 
     }
+
+    @Override
+    public String status(String text) {
+        return text;
+    }
 }

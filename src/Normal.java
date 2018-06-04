@@ -22,4 +22,11 @@ public class Normal implements ArticleState {
     public void printState() {
         System.out.println("Welcome to Normal state");
     }
+
+    @Override
+    public String status(String text) {
+        return text;
+    }
+
+
 }

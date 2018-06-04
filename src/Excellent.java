@@ -17,4 +17,9 @@ public class Excellent implements TestState {
         System.out.println("Welcome To Excellent State");
 
     }
+
+    @Override
+    public String status(String text) {
+        return "^^^" + text+ "^^^";
+    }
 }

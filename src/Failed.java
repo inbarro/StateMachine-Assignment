@@ -18,4 +18,9 @@ public class Failed implements TestState {
         System.out.println("Welcome to Failed State");
 
     }
+
+    @Override
+    public String status(String text) {
+        return null;
+    }
 }
