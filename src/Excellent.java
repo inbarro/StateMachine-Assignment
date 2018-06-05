@@ -3,12 +3,12 @@ public class Excellent implements TestState {
         printState();
     }
     @Override
-    public void exam(int score) {
+    public void exam(int score,Student Student) {
 
     }
 
     @Override
-    public void next_week() {
+    public void next_week(Student Student) {
 
     }
 

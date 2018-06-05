@@ -5,12 +5,12 @@ public class Researcher implements ArticleState {
     }
 
     @Override
-    public void read() {
+    public void read(Student Student) {
         Student.articles++;
     }
 
     @Override
-    public void next_week() {
+    public void next_week(Student Student) {
 
     }
 

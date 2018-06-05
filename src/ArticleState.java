@@ -1,4 +1,4 @@
 public interface ArticleState extends IState{
 
-    void read();
+    void read(Student Student);
 }

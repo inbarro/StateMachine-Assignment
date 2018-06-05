@@ -1,9 +1,9 @@
 public class Student {
-    static QuestionnaireState QuestionnaireState;
-    static PostsState PostsState;
-    static ArticleState ArticleState;
-    static TestState TestState;
-    static int questionnaireNum,posts,Points,articles;
+     QuestionnaireState QuestionnaireState;
+     PostsState PostsState;
+     ArticleState ArticleState;
+     TestState TestState;
+     int questionnaireNum,posts,Points,articles;
 
     public Student()
     {
@@ -17,24 +17,26 @@ public class Student {
         TestState = new BeforeTest();
     }
     public void exam(int score){
-        TestState.exam(score);
+        TestState.exam(score,this);
     }
 
     public void read(){
-        ArticleState.read();
+        ArticleState.read(this);
     }
 
     public void post(){
-        PostsState.post();
+        PostsState.post(this);
     }
 
     public void answer(){
-        QuestionnaireState.answer();
+        QuestionnaireState.answer(this);
     }
 
     public void next_week(){
-        //this.status();
-
+        QuestionnaireState.next_week(this);
+        PostsState.next_week(this);
+        ArticleState.next_week(this);
+        TestState.next_week(this);
     }
 
     public void status(String text){

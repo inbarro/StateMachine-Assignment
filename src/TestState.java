@@ -1,4 +1,3 @@
 public interface TestState extends IState{
-
-    void exam(int score);
+    void exam(int score,Student Student);
 }

@@ -4,7 +4,7 @@ public class BeforeTest implements TestState {
     }
 
     @Override
-    public void exam(int score) {
+    public void exam(int score,Student Student) {
         if(Student.articles>0){
             if(score>89)
                 Student.TestState = new Excellent();
@@ -17,7 +17,7 @@ public class BeforeTest implements TestState {
     }
 
     @Override
-    public void next_week() {
+    public void next_week(Student Student) {
 
     }
 

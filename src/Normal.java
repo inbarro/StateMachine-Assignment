@@ -6,7 +6,7 @@ public class Normal implements ArticleState {
 
 
     @Override
-    public void read() {
+    public void read(Student Student) {
         Student.articles++;
         if(Student.articles>2)
             Student.ArticleState = new Diligent();
@@ -14,7 +14,7 @@ public class Normal implements ArticleState {
     }
 
     @Override
-    public void next_week() {
+    public void next_week(Student Student) {
 
     }
 

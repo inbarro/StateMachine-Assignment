@@ -4,12 +4,12 @@ public class Active implements PostsState {
         printState();
     }
     @Override
-    public void post() {
+    public void post(Student Student) {
         Student.posts++;
     }
 
     @Override
-    public void next_week() {
+    public void next_week(Student Student) {
         Student.posts = 0;
         Student.PostsState = new NotActive();
     }

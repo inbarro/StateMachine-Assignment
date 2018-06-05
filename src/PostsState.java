@@ -1,3 +1,3 @@
 public interface PostsState extends IState{
-    void post();
+    void post(Student Student);
 }

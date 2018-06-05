@@ -6,7 +6,7 @@ public class questionnaireAvailable implements QuestionnaireState {
     }
 
     @Override
-    public void next_week() {
+    public void next_week(Student Student) {
         if(Student.questionnaireNum<12)
             Student.questionnaireNum++;
 
@@ -23,7 +23,7 @@ public class questionnaireAvailable implements QuestionnaireState {
     }
 
     @Override
-    public void answer() {
+    public void answer(Student Student) {
         Student.Points++;
         Student.QuestionnaireState = new questionnaireNotAvailable();
 

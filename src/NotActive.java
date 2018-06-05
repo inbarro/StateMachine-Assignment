@@ -5,7 +5,7 @@ public class NotActive implements PostsState {
     }
 
     @Override
-    public void post() {
+    public void post(Student Student) {
         Student.posts++;
         if(Student.posts == 2)
             Student.PostsState = new Active();
@@ -13,7 +13,7 @@ public class NotActive implements PostsState {
     }
 
     @Override
-    public void next_week() {
+    public void next_week(Student Student) {
         Student.posts = 0;
     }
 
