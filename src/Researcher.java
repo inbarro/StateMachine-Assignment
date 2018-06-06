@@ -6,7 +6,9 @@ public class Researcher implements ArticleState {
 
     @Override
     public void read(Student Student) {
+
         Student.articles++;
+        Student.ArticleState = new Researcher();
     }
 
     @Override
@@ -20,7 +22,7 @@ public class Researcher implements ArticleState {
     }
 
     @Override
-    public String status(String text) {
+    public String statusArt(String text) {
         return "**" + text + "**";
     }
 }

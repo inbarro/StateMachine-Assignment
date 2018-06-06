@@ -9,6 +9,8 @@ public class NotActive implements PostsState {
         Student.posts++;
         if(Student.posts == 2)
             Student.PostsState = new Active();
+        else
+            Student.PostsState = new NotActive();
 
     }
 
@@ -23,7 +25,7 @@ public class NotActive implements PostsState {
     }
 
     @Override
-    public String status(String text) {
+    public String StatusPost(String text) {
         return text;
     }
 }

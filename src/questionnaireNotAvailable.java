@@ -19,11 +19,6 @@ public class questionnaireNotAvailable implements QuestionnaireState {
     }
 
     @Override
-    public String status(String text) {
-        return null;
-    }
-
-    @Override
     public void answer(Student Student) {
 
     }

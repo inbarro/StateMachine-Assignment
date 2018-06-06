@@ -10,6 +10,8 @@ public class Normal implements ArticleState {
         Student.articles++;
         if(Student.articles>2)
             Student.ArticleState = new Diligent();
+        else
+            Student.ArticleState = new Normal();
 
     }
 
@@ -24,7 +26,7 @@ public class Normal implements ArticleState {
     }
 
     @Override
-    public String status(String text) {
+    public String statusArt(String text) {
         return text;
     }
 

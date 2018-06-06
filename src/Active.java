@@ -5,6 +5,7 @@ public class Active implements PostsState {
     }
     @Override
     public void post(Student Student) {
+        Student.PostsState = new Active();
         Student.posts++;
     }
 
@@ -21,7 +22,7 @@ public class Active implements PostsState {
     }
 
     @Override
-    public String status(String text) {
+    public String StatusPost(String text) {
         return text + "(active)";
     }
 }

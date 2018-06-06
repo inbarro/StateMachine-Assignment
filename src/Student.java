@@ -4,6 +4,7 @@ public class Student {
      ArticleState ArticleState;
      TestState TestState;
      int questionnaireNum,posts,Points,articles;
+     Status status;
 
     public Student()
     {
@@ -15,6 +16,7 @@ public class Student {
         ArticleState = new Normal();
         PostsState = new NotActive();
         TestState = new BeforeTest();
+        status = new Status();
     }
     public void exam(int score){
         TestState.exam(score,this);
@@ -40,12 +42,7 @@ public class Student {
     }
 
     public void status(String text){
-        String status = text;
-        status = ArticleState.status(text);
-        status = PostsState.status(status);
-        status = TestState.status(status);
-
-        System.out.println(status);
+        status.status(text,this);
 
 
     }

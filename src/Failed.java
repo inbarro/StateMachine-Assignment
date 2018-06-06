@@ -20,7 +20,7 @@ public class Failed implements TestState {
     }
 
     @Override
-    public String status(String text) {
-        return null;
+    public String statusTest(String text) {
+        return text;
     }
 }

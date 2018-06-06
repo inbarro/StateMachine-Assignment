@@ -17,12 +17,7 @@ public class questionnaireAvailable implements QuestionnaireState {
         System.out.println("Welcome to questionnaireAvailable state");
     }
 
-    @Override
-    public String status(String text) {
-        return null;
-    }
-
-    @Override
+        @Override
     public void answer(Student Student) {
         Student.Points++;
         Student.QuestionnaireState = new questionnaireNotAvailable();

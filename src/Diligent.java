@@ -8,8 +8,11 @@ public class Diligent implements ArticleState {
     @Override
     public void read(Student Student) {
         Student.articles++;
+
         if(Student.articles>7)
             Student.ArticleState = new Researcher();
+        else
+            Student.ArticleState = new Diligent();
 
     }
 
@@ -26,7 +29,7 @@ public class Diligent implements ArticleState {
     }
 
     @Override
-    public String status(String text) {
+    public String statusArt(String text) {
         return '*' + text + '*';
     }
 }

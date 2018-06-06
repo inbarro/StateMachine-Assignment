@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="StateMachine:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/StateMachine_jar</output-path>
+    <root id="archive" name="StateMachine.jar">
+      <element id="module-output" name="StateMachine" />
+    </root>
+  </artifact>
+</component>

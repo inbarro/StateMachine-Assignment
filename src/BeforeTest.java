@@ -28,7 +28,7 @@ public class BeforeTest implements TestState {
     }
 
     @Override
-    public String status(String text) {
+    public String statusTest(String text) {
         return text;
     }
 }
