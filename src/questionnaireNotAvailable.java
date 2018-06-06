@@ -6,9 +6,10 @@ public class questionnaireNotAvailable implements QuestionnaireState {
 
     @Override
     public void next_week(Student Student) {
-        if(Student.questionnaireNum<12)
+        if(Student.questionnaireNum<12) {
             Student.questionnaireNum++;
-        Student.QuestionnaireState = new questionnaireAvailable();
+            Student.QuestionnaireState = new questionnaireAvailable();
+        }
 
 
     }

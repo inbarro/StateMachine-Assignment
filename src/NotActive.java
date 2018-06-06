@@ -17,6 +17,8 @@ public class NotActive implements PostsState {
     @Override
     public void next_week(Student Student) {
         Student.posts = 0;
+        Student.PostsState = new NotActive();
+
     }
 
     @Override
